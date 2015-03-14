@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dip" >
+
+        <com.itheima.smartbj.view.HorizontalScrollViewPage
+            android:id="@+id/vp_topnews"
+            android:layout_width="match_parent"
+            android:layout_height="185dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#33000000"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/tv_picdec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述信息"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/ll_picpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_listnews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

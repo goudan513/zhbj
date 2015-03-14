@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.itheima.smartbj.view.NoScrollViewPage
+        android:id="@+id/vp_fgmain_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_fgmain_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_firstpage"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/firstpage_tab_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_newscenter"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/newscenter_tab_selector"
+            android:text="新闻中心" />
+
+        <RadioButton
+            android:id="@+id/rb_smartservice"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/smartservice_tab_selector"
+            android:text="智慧服务" />
+
+        <RadioButton
+            android:id="@+id/rb_govaffirs"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/govaffairs_tab_selector"
+            android:text="政务" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/setting_tab_selector"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>
